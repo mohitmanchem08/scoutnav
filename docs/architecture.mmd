@@ -1,0 +1,9 @@
+flowchart TD
+  A[HC-SR04 front range] --> D[Sensor sampling]
+  B[Left IR] --> D
+  C[Right IR] --> D
+  D --> E[Navigation policy]
+  E --> F[Safety gate / e-stop]
+  F --> G[Motor driver adapter]
+  G --> H[Left and right DC motors]
+  E --> I[Serial telemetry]
